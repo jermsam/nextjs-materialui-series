@@ -1,7 +1,13 @@
 
 const path = require('path');
+const withOptimizedImages = require('next-optimized-images');
 
-module.exports={
+module.exports=withOptimizedImages({
+
+    /* config for next-optimized-images */
+  imageTrace: {
+    color: "#fafa"
+  },
 
 
     webpack: (config)=>{
@@ -11,4 +17,4 @@ module.exports={
         return config;
     }
     
-}
+})

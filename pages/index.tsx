@@ -9,15 +9,21 @@ const lessons =[
   }
 ]
 
+
+
 export default function Home() {
   return (
     <div className="container">
-     
+   
       <main>
+      <div className="image-container">
+    <img src={require(`public/vercel.png?trace`).trace} className='header-img'/>
+    <img src={require(`public/vercel.png?webp`)} className='header-img'/>
+    </div>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
+      
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
@@ -45,7 +51,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src={require("public/vercel.svg")} alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
@@ -57,6 +63,7 @@ export default function Home() {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position:absolute;
       }
       
       main {
@@ -104,7 +111,7 @@ export default function Home() {
       }
       
       .title {
-        margin: 0;
+        margin: 10px;
         line-height: 1.15;
         font-size: 4rem;
       }
@@ -178,6 +185,19 @@ export default function Home() {
           flex-direction: column;
         }
       }
+
+      .image-container: {
+        position: relative:
+       
+      }
+      .header-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 60px;
+      }
+
     `}</style>
      
     </div>
