@@ -6,6 +6,12 @@ const lessons =[
     title:'Set Up',
     url:'/lessons/setup',
     description:'Kickstart next js. Convert to typescript. Setup material-ui. Css-in-js in external files. Customize theme'
+  },
+  {
+    id:2,
+    title:'Grid Layout',
+    url:'/lessons/grid-layout',
+    description:'Illustration of how to use material ui for page layout'
   }
 ]
 
