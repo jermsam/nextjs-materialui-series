@@ -17,4 +17,5 @@ export default createMuiTheme({
       default: '#fff',
     },
   },
+ // spacing:factor => `${0.25 * factor}rem`, 
 });
