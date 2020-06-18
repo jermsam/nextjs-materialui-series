@@ -65,7 +65,7 @@ const  OutlinedCard:FunctionComponent<CoffeeItemProps>=
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant='contained' >BUY NOW</Button>
+        <Button size="small" variant='contained' color='primary'>BUY NOW</Button>
         <Button size="small">OFFER</Button>
       </CardActions>
     </Card>

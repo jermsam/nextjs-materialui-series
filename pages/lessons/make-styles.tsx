@@ -1,4 +1,4 @@
-import { Button, Typography, makeStyles, Box, Toolbar, AppBar } from "@material-ui/core";
+import { Button, Typography, makeStyles, Box, Toolbar, AppBar, Paper } from "@material-ui/core";
 import Link from 'next/link'
 import classNames from 'classnames'
 
@@ -31,7 +31,7 @@ export default function Learn(){
     const classes =useStyles()
 
     return(
-       <div>
+      <Paper style={{height: '100%'}}>
        <AppBar position='static' >
        <Toolbar >
        <Typography variant='h4'>
@@ -67,6 +67,6 @@ export default function Learn(){
           right: 0;
         }
     `}</style>
-       </div>
+    </Paper>
     )
 }

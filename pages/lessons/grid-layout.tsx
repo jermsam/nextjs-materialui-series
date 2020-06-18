@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import React from "react";
 import Header from "components/Header";
 import CoffeeMenu from "containers/CoffeeMenu";
@@ -66,7 +66,8 @@ export interface CoffeeItemProps{
 export default function GridLayout(){
 
     return (
-        <Grid container direction="column">
+       <Paper style={{height:'100%'}}>
+       <Grid container direction="column">
        <Grid item>
        <Header/>
        </Grid>
@@ -78,5 +79,6 @@ export default function GridLayout(){
        <Grid item xs={false}  sm={1} md={2}/>
        </Grid>
         </Grid>
+       </Paper>
     )
 }

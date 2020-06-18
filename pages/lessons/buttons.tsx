@@ -1,5 +1,5 @@
 
-import { Button, Typography, makeStyles, Box, Toolbar, AppBar, IconButton } from "@material-ui/core";
+import { Button, Typography, makeStyles, Box, Toolbar, AppBar, IconButton, Paper } from "@material-ui/core";
 import Link from 'next/link'
 import classNames from 'classnames'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
@@ -40,7 +40,7 @@ export default function Learn(){
     const classes =useStyles()
 
     return(
-       <div>
+       <Paper style={{height: '100%'}}>
        <AppBar position='static' >
        <Toolbar >
        <Typography variant='h4'>
@@ -85,6 +85,6 @@ export default function Learn(){
           right: 0;
         }
     `}</style>
-       </div>
+       </Paper>
     )
 }

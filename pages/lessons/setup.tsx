@@ -1,4 +1,4 @@
-import { Button, Typography, makeStyles, Box } from "@material-ui/core";
+import { Button, Typography, makeStyles, Box, Paper } from "@material-ui/core";
 import Link from 'next/link'
 
 
@@ -14,7 +14,7 @@ export default function Learn(){
     const classes =useStyles()
 
     return(
-       <div>
+       <Paper style={{height: '100%'}}>
        
      <div className="image-container">
       <img className="blur-image" src={require(`public/africa.jpg?lqip`)} />
@@ -44,6 +44,6 @@ export default function Learn(){
           right: 0;
         }
     `}</style>
-       </div>
+       </Paper>
     )
 }

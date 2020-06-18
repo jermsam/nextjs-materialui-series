@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Paper } from '@material-ui/core'
 
 const lessons =[
   {
@@ -31,7 +32,7 @@ const lessons =[
 
 export default function Home() {
   return (
-    <div className="container">
+    <Paper className="container">
    
       <main>
       <div className="image-container">
@@ -203,7 +204,6 @@ export default function Home() {
           flex-direction: column;
         }
       }
-
       .image-container: {
         position: relative:
        
@@ -215,11 +215,8 @@ export default function Home() {
         width: 300px;
         height: 60px;
       }
-
     `}</style>
      
-    </div>
+    </Paper>
   )
 }
-
-
