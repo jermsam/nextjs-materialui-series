@@ -9,7 +9,6 @@ import red from '@material-ui/core/colors/red';
 import ShareIcon from '@material-ui/icons/Share';
 import { FunctionComponent } from 'react';
 import { CoffeeItemProps } from 'containers/CoffeeMenu';
-import brown from '@material-ui/core/colors/brown';
 
 const useStyles = makeStyles({
   
@@ -30,8 +29,6 @@ const useStyles = makeStyles({
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
-    backgroundColor: brown[500],
-   
   },
 });
 
@@ -46,7 +43,7 @@ const  OutlinedCard:FunctionComponent<CoffeeItemProps>=
     <Card variant="outlined">
     <CardHeader
     avatar={
-      <Avatar aria-label="recipe" className={classes.avatar} src={require(`public/${avatar}`)}/>
+      <Avatar aria-label="recipe" className={classes.avatar} src={require(`public/${avatar}?webp`)}/>
     }
     action={
       <IconButton aria-label="settings">
@@ -68,8 +65,8 @@ const  OutlinedCard:FunctionComponent<CoffeeItemProps>=
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant='contained' color='primary' >BUY NOW</Button>
-        <Button size="small" color='secondary'>OFFER</Button>
+        <Button size="small" variant='contained' >BUY NOW</Button>
+        <Button size="small">OFFER</Button>
       </CardActions>
     </Card>
   );
