@@ -18,6 +18,12 @@ const lessons =[
     title:'Make Styles',
     url:'/lessons/make-styles',
     description:'Style based on theme'
+  },
+  {
+    id:4,
+    title:'Paper',
+    url:'/lessons/paper',
+    description:'Basically a background with a shadow'
   }
 ]
 
