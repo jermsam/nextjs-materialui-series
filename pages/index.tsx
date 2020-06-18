@@ -12,6 +12,12 @@ const lessons =[
     title:'Grid Layout',
     url:'/lessons/grid-layout',
     description:'Illustration of how to use material ui for page layout'
+  },
+  {
+    id:3,
+    title:'Make Styles',
+    url:'/lessons/make-styles',
+    description:'Style based on theme'
   }
 ]
 
