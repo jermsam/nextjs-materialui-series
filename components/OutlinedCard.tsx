@@ -9,6 +9,7 @@ import red from '@material-ui/core/colors/red';
 import ShareIcon from '@material-ui/icons/Share';
 import { FunctionComponent } from 'react';
 import { CoffeeItemProps } from 'containers/CoffeeMenu';
+import CardActionArea from '@material-ui/core/CardActionArea';
 
 const useStyles = makeStyles({
   
@@ -53,6 +54,7 @@ const  OutlinedCard:FunctionComponent<CoffeeItemProps>=
     title={title}
     subheader={subTitle}
   />
+  <CardActionArea>
   <CardMedia
   className={classes.media}
   image={require(`public/${img}?webp`)}
@@ -64,6 +66,7 @@ const  OutlinedCard:FunctionComponent<CoffeeItemProps>=
          {description}
         </Typography>
       </CardContent>
+  </CardActionArea>
       <CardActions>
         <Button size="small" variant='contained' color='primary'>BUY NOW</Button>
         <Button size="small">OFFER</Button>

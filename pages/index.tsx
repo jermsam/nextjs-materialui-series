@@ -25,6 +25,12 @@ const lessons =[
     title:'Paper',
     url:'/lessons/paper',
     description:'Basically a background with a shadow'
+  },
+  {
+    id:5,
+    title:'Flex Properties',
+    url:'/lessons/flex',
+    description:'Basic For Flex Properties on Parent and how they affect the children'
   }
 ]
 
